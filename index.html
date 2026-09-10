@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Pranjal ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- SCREEN 1 : WELCOME -->
+    <!-- ========================= -->
+
+    <section class="screen welcome" id="welcomeScreen">
+
+        <p class="small-text">
+            A little birthday surprise...
+        </p>
+
+        <h1>
+            Hey Pranjal...
+        </h1>
+
+        <p class="subtitle">
+            I have something to tell you.
+        </p>
+
+        <button onclick="startSurprise()">
+            Open ♡
+        </button>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- SCREEN 2 : CORRIDOR -->
+    <!-- ========================= -->
+
+    <section class="screen corridor" id="corridorScreen">
+
+        <p class="small-text">
+            First year · First day
+        </p>
+
+        <h2>
+            It all started<br>
+            on a corridor...
+        </h2>
+
+
+        <div class="story-card">
+
+            <p>
+                First day of college.
+            </p>
+
+            <p>
+                Two people wandering around,
+                both wondering which class to go to.
+            </p>
+
+            <p>
+                And then, somehow,
+                I asked a very simple question...
+            </p>
+
+
+            <div class="question">
+                “Can I sit beside you?”
+            </div>
+
+
+            <p>
+                Neither of us knew then that a simple
+                seat beside each other would become
+                the beginning of something so special.
+            </p>
+
+        </div>
+
+
+        <button onclick="showNextScreen()">
+            And then... →
+        </button>
+
+    </section>
+
+    <!-- ========================= -->
+<!-- SCREEN 3 : FOUR YEARS -->
+<!-- ========================= -->
+
+<section class="screen four-years" id="fourYearsScreen">
+
+    <p class="small-text">
+        Somehow, four years happened...
+    </p>
+
+    <h2>
+        One little question<br>
+        turned into so much.
+    </h2>
+
+
+    <div class="memory-grid">
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                📚
+            </div>
+
+            <h3>
+                Study helpers
+            </h3>
+
+            <p>
+                Getting through assignments,
+                exams and everything in between.
+            </p>
+
+        </div>
+
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                🍴
+            </div>
+
+            <h3>
+                Eating together
+            </h3>
+
+            <p>
+                Because somehow food always
+                makes everything better.
+            </p>
+
+        </div>
+
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                😂
+            </div>
+
+            <h3>
+                Laughing together
+            </h3>
+
+            <p>
+                Over things that probably
+                weren't even that funny.
+            </p>
+
+        </div>
+
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                📝
+            </div>
+
+            <h3>
+                Project partners
+            </h3>
+
+            <p>
+                Surviving projects, deadlines
+                and college chaos together.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <p class="bottom-line">
+
+        From bench partners to project partners
+        to people who just know when the other
+        one needs help. 🤍
+
+    </p>
+
+
+    <button onclick="showMemories()">
+        There is more → 
+    </button>
+
+</section>
+    <!-- ========================= -->
+<!-- SCREEN 4 : LITTLE THINGS -->
+<!-- ========================= -->
+
+<section class="screen little-things" id="littleThingsScreen">
+
+    <p class="small-text">
+        The little things
+    </p>
+
+    <h2>
+        Some memories<br>
+        don't need pictures.
+    </h2>
+
+
+    <div class="little-card">
+
+        <p>
+            Like studying together.
+        </p>
+
+        <p>
+            Eating together.
+        </p>
+
+        <p>
+            Laughing at absolutely nothing.
+        </p>
+
+        <p>
+            Helping each other whenever college
+            decided to make life difficult.
+        </p>
+
+
+        <div class="chapati-memory">
+
+            <div class="chapati-icon">
+                🥹
+            </div>
+
+            <h3>
+                And the chapati roll.
+            </h3>
+
+            <p>
+                The girl who would give me a piece
+                of hers whenever I said I was hungry.
+            </p>
+
+        </div>
+
+
+        <p class="last-thought">
+            It's funny how the smallest things
+            end up becoming the memories you
+            remember the most.
+        </p>
+
+    </div>
+
+
+    <button onclick="showSecondYear()">
+        One more thing →
+    </button>
+
+</section>
+    <!-- ========================= -->
+<!-- SCREEN 5 : BIRTHDAY -->
+<!-- ========================= -->
+
+<section class="screen birthday" id="birthdayScreen">
+
+    <div class="balloons">
+
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+
+    </div>
+
+
+    <p class="small-text">
+        12 · 09 · 2026
+    </p>
+
+
+    <div class="cake">
+        🎂
+    </div>
+
+
+    <h2>
+        Happy Birthday,
+        <span>Pranjal!</span>
+    </h2>
+
+
+    <p class="birthday-subtitle">
+        Today is all about you. ♡
+    </p>
+
+
+    <button onclick="showLetter()">
+        A little message for you →
+    </button>
+
+
+</section>
+    <!-- ========================= -->
+<!-- SCREEN 4.5 : SECOND YEAR -->
+<!-- ========================= -->
+
+<section class="screen second-year" id="secondYearScreen">
+
+    <p class="small-text">
+        Oh... and one more memory
+    </p>
+
+    <h2>
+        Do you remember<br>
+        this one?
+    </h2>
+
+
+    <div class="memory-story">
+
+        <p class="year">
+            Second year.
+        </p>
+
+        <p>
+            The year I somehow managed to
+            <strong>forget your birthday.</strong> 😭
+        </p>
+
+        <p>
+            I felt so bad that I couldn't just
+            leave it at that.
+        </p>
+
+
+        <div class="gift-box">
+
+            <div class="gift">
+                🍫
+            </div>
+
+            <p>
+                So I got you a little
+                <strong>Dairy Milk</strong>...
+            </p>
+
+        </div>
+
+
+        <p>
+            ...wrote you a tiny apology note...
+        </p>
+
+
+        
+
+
+       
+
+
+        <p class="ending-memory">
+
+            And yes... I secretly slipped it
+            into your bag when you weren't around. 😂
+
+        </p>
+
+    </div>
+
+
+    <button onclick="showBirthday()">
+        Okay, enough embarrassing memories → 
+    </button>
+
+</section>
+
+    <!-- ========================= -->
+<!-- SCREEN 6 : LETTER -->
+<!-- ========================= -->
+
+<section class="screen letter-screen" id="letterScreen">
+
+    <p class="small-text">
+        From me to you ♡
+    </p>
+
+    <h2>
+        A little message<br>
+        for you...
+    </h2>
+
+
+    <div class="letter-card">
+
+        <p>
+            Pranjal,
+        </p>
+
+        <p>
+            I really don't know how to put into words
+            how much you mean to me.
+        </p>
+
+        <p>
+            When I think about the past four years,
+            it's funny to realise how it all started.
+            Two people standing in a corridor on the
+            first day of college, both wondering where
+            they were supposed to go.
+        </p>
+
+        <p>
+            And then I asked,
+        </p>
+
+        <div class="letter-quote">
+            “Can I sit beside you?”
+        </div>
+
+        <p>
+            And somehow, that one question gave me
+            a person who would become my bench partner,
+            project partner, study helper, food-sharing
+            partner and someone I could laugh with
+            over absolutely nothing.
+        </p>
+
+        <p>
+            You've always been someone I admire —
+            focused, well-mannered, and quietly
+            dependable. And there is something
+            really comforting about having you around.
+        </p>
+
+        <p>
+            Thank you for all the little things.
+            For studying with me, eating with me,
+            helping me, laughing with me, and even
+            giving me your chapati roll when I said
+            I was hungry. 🥹
+        </p>
+
+        <p>
+            I hope this year brings you everything
+            you've been working for and so much
+            happiness along the way.
+        </p>
+
+        <p>
+            And I hope that even when college is
+            over and life takes us in different
+            directions, we'll still have all these
+            memories to look back on and laugh about.
+        </p>
+
+        <p>
+            Happy birthday, Pranjal.
+            I'm really, really glad you're a part
+            of my life. 🤍
+        </p>
+
+
+        <div class="signature">
+            With lots of love ♡
+        </div>
+
+    </div>
+
+
+    <button onclick="showFinal()">
+        One last thing... →
+    </button>
+
+</section>
+    <!-- ========================= -->
+<!-- SCREEN 7 : FINAL -->
+<!-- ========================= -->
+
+<section class="screen final-screen" id="finalScreen">
+
+    <p class="script-text">
+        Four years later...
+    </p>
+
+    <h2>
+        I'm really glad<br>
+        I asked,
+    </h2>
+
+    <div class="final-quote">
+        “Can I sit beside you?”
+    </div>
+
+    <div class="divider">
+        ♡
+    </div>
+
+    <h2 class="final-birthday">
+        Happy Birthday,<br>
+        Pranjal. ♡
+    </h2>
+
+    <p class="final-message">
+        Here's to all the years, memories, meals,
+        projects, study sessions and laughs that
+        got us here — and to all the ones still
+        waiting for us. Also we need to click pictures together we hardly have any pictures together. 
+    </p>
+
+    <p class="final-script">
+        Same bench. More memories.
+    </p>
+
+</section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

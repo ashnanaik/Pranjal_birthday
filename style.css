@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=Parisienne&display=swap');
+
+
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background: #fff8f4;
+
+    color: #392b2b;
+
+    font-family: "DM Sans", sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* ========================= */
+/* ALL SCREENS */
+/* ========================= */
+
+.screen {
+
+    min-height: 100vh;
+    min-height: 100svh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 55px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* ========================= */
+/* WELCOME */
+/* ========================= */
+
+.welcome {
+
+    background: #fff8f4;
+
+}
+
+
+.welcome::before {
+
+    content: "";
+
+    width: 320px;
+    height: 320px;
+
+    background: #f5d8da;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: -150px;
+    right: -130px;
+
+    opacity: 0.55;
+
+}
+
+
+.welcome::after {
+
+    content: "♡";
+
+    position: absolute;
+
+    bottom: 45px;
+    left: 30px;
+
+    font-size: 35px;
+
+    color: #d98493;
+
+    opacity: 0.5;
+
+}
+
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.small-text {
+
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+
+    color: #8f4655;
+
+    margin-bottom: 18px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+h1,
+h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-weight: 600;
+
+    line-height: 0.95;
+
+}
+
+
+h1 {
+
+    font-size: clamp(58px, 15vw, 110px);
+
+}
+
+
+h2 {
+
+    font-size: clamp(45px, 12vw, 80px);
+
+}
+
+
+.subtitle {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(21px, 6vw, 27px);
+
+    color: #806d6d;
+
+    margin-top: 22px;
+
+    margin-bottom: 32px;
+
+}
+
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+button {
+
+    border: none;
+
+    background: #d98493;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    min-height: 48px;
+
+    border-radius: 50px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        0 10px 25px rgba(217, 132, 147, 0.25);
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+button:active {
+
+    transform: scale(0.97);
+
+}
+
+
+/* ========================= */
+/* CORRIDOR */
+/* ========================= */
+
+.corridor {
+
+    background: #fffdfb;
+
+    display: none;
+
+}
+
+
+/* ========================= */
+/* STORY CARD */
+/* ========================= */
+
+.story-card {
+
+    width: min(650px, 100%);
+
+    background: rgba(255, 248, 244, 0.9);
+
+    border: 1px solid #ead8d5;
+
+    border-radius: 20px;
+
+    padding: 28px 22px;
+
+    margin: 25px 0;
+
+    box-shadow:
+        0 15px 40px rgba(80, 50, 50, 0.07);
+
+}
+
+
+.story-card p {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    line-height: 1.55;
+
+    color: #806d6d;
+
+    margin-bottom: 16px;
+
+}
+
+
+.question {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(29px, 8vw, 50px);
+
+    line-height: 1.1;
+
+    color: #8f4655;
+
+    margin: 25px 0;
+
+}
+
+
+/* ========================= */
+/* FOUR YEARS */
+/* ========================= */
+
+.four-years {
+
+    background: #fff8f4;
+
+    display: none;
+
+}
+
+
+.memory-grid {
+
+    width: min(700px, 100%);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin: 28px 0;
+
+}
+
+
+.memory-card {
+
+    background: #fffdfb;
+
+    border: 1px solid #ead8d5;
+
+    border-radius: 17px;
+
+    padding: 20px 13px;
+
+    box-shadow:
+        0 10px 25px rgba(80, 50, 50, 0.05);
+
+}
+
+
+.memory-icon {
+
+    font-size: 29px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.memory-card h3 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: #8f4655;
+
+    margin-bottom: 6px;
+
+}
+
+
+.memory-card p {
+
+    font-size: 12.5px;
+
+    line-height: 1.55;
+
+    color: #806d6d;
+
+}
+
+
+.bottom-line {
+
+    max-width: 600px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    color: #806d6d;
+
+    margin-bottom: 23px;
+
+}
+
+
+/* ========================= */
+/* LITTLE THINGS */
+/* ========================= */
+
+.little-things {
+
+    background: #fffdfb;
+
+    display: none;
+
+}
+
+
+.little-card {
+
+    width: min(650px, 100%);
+
+    background: #fff8f4;
+
+    border: 1px solid #ead8d5;
+
+    border-radius: 20px;
+
+    padding: 28px 20px;
+
+    margin: 25px 0;
+
+    box-shadow:
+        0 15px 40px rgba(80, 50, 50, 0.06);
+
+}
+
+
+.little-card > p {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 21px;
+
+    line-height: 1.4;
+
+    color: #806d6d;
+
+    margin-bottom: 10px;
+
+}
+
+
+.chapati-memory {
+
+    margin: 25px 0;
+
+    padding: 22px 17px;
+
+    background: #f7e1e2;
+
+    border-radius: 17px;
+
+}
+
+
+.chapati-icon {
+
+    font-size: 32px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.chapati-memory h3 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+
+    color: #8f4655;
+
+    margin-bottom: 7px;
+
+}
+
+
+.chapati-memory p {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 19px;
+
+    line-height: 1.45;
+
+    color: #806d6d;
+
+}
+
+
+.last-thought {
+
+    font-size: 18px !important;
+
+    color: #8f4655 !important;
+
+    margin-top: 22px;
+
+}
+
+
+/* ========================= */
+/* SECOND YEAR */
+/* ========================= */
+
+.second-year {
+
+    background: #fffdfb;
+
+    display: none;
+
+}
+
+
+.memory-story {
+
+    width: min(600px, 100%);
+
+    margin: 25px 0;
+
+}
+
+
+.memory-story > p {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 21px;
+
+    line-height: 1.5;
+
+    color: #806d6d;
+
+    margin-bottom: 17px;
+
+}
+
+
+.memory-story .year {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+
+    color: #8f4655;
+
+}
+
+
+.gift-box {
+
+    background: #f7e1e2;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    margin: 23px 0;
+
+}
+
+
+.gift {
+
+    font-size: 58px;
+
+    margin-bottom: 7px;
+
+    animation: tinyFloat 2s ease-in-out infinite;
+
+}
+
+
+@keyframes tinyFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+}
+
+
+.ending-memory {
+
+    font-size: 18px !important;
+
+    color: #8f4655 !important;
+
+}
+
+
+/* ========================= */
+/* BIRTHDAY */
+/* ========================= */
+
+.birthday {
+
+    background: #fff8f4;
+
+    display: none;
+
+}
+
+
+.birthday h2 {
+
+    font-size: clamp(50px, 13vw, 100px);
+
+    margin-bottom: 15px;
+
+}
+
+
+.birthday h2 span {
+
+    color: #8f4655;
+
+}
+
+
+.birthday-subtitle {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 24px;
+
+    color: #806d6d;
+
+    margin-bottom: 30px;
+
+}
+
+
+.cake {
+
+    font-size: 70px;
+
+    margin-bottom: 15px;
+
+    animation: cakeFloat 2.5s ease-in-out infinite;
+
+}
+
+
+@keyframes cakeFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+
+}
+
+
+/* ========================= */
+/* BALLOONS */
+/* ========================= */
+
+.balloons {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+}
+
+
+.balloons span {
+
+    position: absolute;
+
+    font-size: 48px;
+
+    bottom: -100px;
+
+    animation: balloonUp 8s linear infinite;
+
+    opacity: 0.7;
+
+}
+
+
+.balloons span:nth-child(1) {
+    left: 5%;
+    animation-delay: 0s;
+}
+
+
+.balloons span:nth-child(2) {
+    left: 28%;
+    animation-delay: 2s;
+}
+
+
+.balloons span:nth-child(3) {
+    left: 68%;
+    animation-delay: 4s;
+}
+
+
+.balloons span:nth-child(4) {
+    left: 87%;
+    animation-delay: 1s;
+}
+
+
+@keyframes balloonUp {
+
+    0% {
+        transform: translateY(0) rotate(-8deg);
+    }
+
+    100% {
+        transform: translateY(-120vh) rotate(8deg);
+    }
+
+}
+
+
+/* ========================= */
+/* LETTER */
+/* ========================= */
+
+.letter-screen {
+
+    background: #fff8f4;
+
+    display: none;
+
+}
+
+
+.letter-card {
+
+    width: min(650px, 100%);
+
+    background: #fffdfb;
+
+    border: 1px solid #ead8d5;
+
+    border-radius: 19px;
+
+    padding: 28px 21px;
+
+    margin: 25px 0;
+
+    text-align: left;
+
+    box-shadow:
+        0 15px 40px rgba(80, 50, 50, 0.07);
+
+}
+
+
+.letter-card p {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    color: #806d6d;
+
+    margin-bottom: 17px;
+
+}
+
+
+.letter-quote {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(30px, 8vw, 38px);
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    color: #8f4655;
+
+    margin: 25px 0;
+
+}
+
+
+.signature {
+
+    font-family: "Parisienne", cursive;
+
+    font-size: 28px;
+
+    color: #8f4655;
+
+    text-align: right;
+
+    margin-top: 22px;
+
+}
+
+
+/* ========================= */
+/* FINAL */
+/* ========================= */
+
+.final-screen {
+
+    display: none;
+
+    background: linear-gradient(
+        180deg,
+        #f8dfe0,
+        #f6d1cf,
+        #edb9a9
+    );
+
+}
+
+
+.script-text {
+
+    font-family: "Parisienne", cursive;
+
+    font-size: 29px;
+
+    color: #8f4655;
+
+    margin-bottom: 17px;
+
+}
+
+
+.final-quote {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(30px, 8vw, 55px);
+
+    color: #8f4655;
+
+    margin: 25px 0;
+
+}
+
+
+.divider {
+
+    font-size: 22px;
+
+    color: #a86570;
+
+    margin: 22px 0;
+
+}
+
+
+.final-birthday {
+
+    font-size: clamp(45px, 12vw, 80px);
+
+    color: #392b2b;
+
+}
+
+
+.final-message {
+
+    max-width: 600px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    line-height: 1.55;
+
+    color: #6e5555;
+
+    margin: 23px auto;
+
+}
+
+
+.final-script {
+
+    font-family: "Parisienne", cursive;
+
+    font-size: 28px;
+
+    color: #8f4655;
+
+    margin-top: 22px;
+
+}
+
+
+/* ========================= */
+/* SMALL PHONE */
+/* ========================= */
+
+@media (max-width: 380px) {
+
+    .screen {
+
+        padding: 48px 15px;
+
+    }
+
+
+    h1 {
+
+        font-size: 55px;
+
+    }
+
+
+    h2 {
+
+        font-size: 42px;
+
+    }
+
+
+    .story-card,
+    .little-card,
+    .letter-card {
+
+        padding: 23px 17px;
+
+    }
+
+
+    .memory-grid {
+
+        gap: 8px;
+
+    }
+
+
+    .memory-card {
+
+        padding: 17px 9px;
+
+    }
+
+
+    .memory-card h3 {
+
+        font-size: 20px;
+
+    }
+
+
+    .memory-card p {
+
+        font-size: 11.5px;
+
+    }
+
+}
