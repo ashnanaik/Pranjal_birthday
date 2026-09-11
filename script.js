@@ -18,7 +18,7 @@ function showNextScreen() {
 
 function showMemories() {
 
-    document.getElementById("fourYearsScreen").style.display = "none";
+    document.getElementById("threeYearsScreen").style.display = "none";
 
     document.getElementById("littleThingsScreen").style.display = "flex";
 
