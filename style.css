@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=Parisienne&display=swap');
 
-
-/* ========================= */
-/* RESET */
-/* ========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -27,13 +22,8 @@ body {
     font-family: "DM Sans", sans-serif;
 
     overflow-x: hidden;
+    overflow: hidden;
 }
-
-
-/* ========================= */
-/* ALL SCREENS */
-/* ========================= */
-
 .screen {
 
     min-height: 100vh;
@@ -57,18 +47,11 @@ body {
 
 }
 
-
-/* ========================= */
-/* WELCOME */
-/* ========================= */
-
 .welcome {
 
     background: #fff8f4;
 
 }
-
-
 .welcome::before {
 
     content: "";
@@ -107,11 +90,6 @@ body {
 
 }
 
-
-/* ========================= */
-/* TEXT */
-/* ========================= */
-
 .small-text {
 
     font-size: 11px;
@@ -130,7 +108,6 @@ body {
 
 }
 
-
 h1,
 h2 {
 
@@ -142,20 +119,13 @@ h2 {
 
 }
 
-
 h1 {
-
     font-size: clamp(58px, 15vw, 110px);
-
 }
-
 
 h2 {
-
     font-size: clamp(45px, 12vw, 80px);
-
 }
-
 
 .subtitle {
 
@@ -170,12 +140,6 @@ h2 {
     margin-bottom: 32px;
 
 }
-
-
-/* ========================= */
-/* BUTTONS */
-/* ========================= */
-
 button {
 
     border: none;
@@ -221,11 +185,6 @@ button:active {
 
 }
 
-
-/* ========================= */
-/* CORRIDOR */
-/* ========================= */
-
 .corridor {
 
     background: #fffdfb;
@@ -233,11 +192,6 @@ button:active {
     display: none;
 
 }
-
-
-/* ========================= */
-/* STORY CARD */
-/* ========================= */
 
 .story-card {
 
@@ -257,7 +211,6 @@ button:active {
         0 15px 40px rgba(80, 50, 50, 0.07);
 
 }
-
 
 .story-card p {
 
@@ -287,11 +240,6 @@ button:active {
     margin: 25px 0;
 
 }
-
-
-/* ========================= */
-/* FOUR YEARS */
-/* ========================= */
 
 .four-years {
 
@@ -384,11 +332,6 @@ button:active {
 
 }
 
-
-/* ========================= */
-/* LITTLE THINGS */
-/* ========================= */
-
 .little-things {
 
     background: #fffdfb;
@@ -396,7 +339,6 @@ button:active {
     display: none;
 
 }
-
 
 .little-card {
 
@@ -491,11 +433,6 @@ button:active {
 
 }
 
-
-/* ========================= */
-/* SECOND YEAR */
-/* ========================= */
-
 .second-year {
 
     background: #fffdfb;
@@ -589,11 +526,6 @@ button:active {
 
 }
 
-
-/* ========================= */
-/* BIRTHDAY */
-/* ========================= */
-
 .birthday {
 
     background: #fff8f4;
@@ -654,11 +586,6 @@ button:active {
     }
 
 }
-
-
-/* ========================= */
-/* BALLOONS */
-/* ========================= */
 
 .balloons {
 
@@ -723,11 +650,6 @@ button:active {
     }
 
 }
-
-
-/* ========================= */
-/* LETTER */
-/* ========================= */
 
 .letter-screen {
 
@@ -805,11 +727,6 @@ button:active {
     margin-top: 22px;
 
 }
-
-
-/* ========================= */
-/* FINAL */
-/* ========================= */
 
 .final-screen {
 
@@ -900,10 +817,6 @@ button:active {
 
 }
 
-
-/* ========================= */
-/* SMALL PHONE */
-/* ========================= */
 
 @media (max-width: 380px) {
 
