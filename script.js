@@ -11,7 +11,7 @@ function showNextScreen() {
 
     document.getElementById("corridorScreen").style.display = "none";
 
-    document.getElementById("fourYearsScreen").style.display = "flex";
+    document.getElementById("threeYearsScreen").style.display = "flex";
 
 }
 
